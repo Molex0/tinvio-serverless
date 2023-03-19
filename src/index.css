@@ -1,0 +1,105 @@
+@import "./normalize.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: auto;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.app {
+  margin: 0 auto;
+  overflow: hidden;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 92%;
+  }
+}
+@media (max-width: 768px) {
+    .container {
+      width: 96%;
+    }
+  }
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/fonts/inter/inter-v8-latin-regular.woff2") format("woff2"),
+    url("../public/fonts/inter/inter-v8-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/fonts/gilroy/Gilroy-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../public/fonts/gilroy/Gilroy-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../public/fonts/gilroy/Gilroy-Bold.woff") format("woff");
+}

@@ -1,16 +1,15 @@
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import Header from "./components/Header";
-import NavBar from "./components/NavBar";
-import CheckOut from "./components/CheckOut";
+import {BrowserRouter as Router} from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
+import Home from './pages/home/Home.jsx'
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
   return (
     <Router>
       <NavBar/>
-      <Header/>
-      
-
+      <Home/>
+      <Footer/>
     </Router>
   );
 }

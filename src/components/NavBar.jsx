@@ -1,47 +1,126 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import Logo from "../svgElements/logo.svg"
+import React, { useState } from "react"
+import logo from "../assets/logo.svg"
+import flag1 from "../assets/flags/en.svg"
+import flag2 from "../assets/flags/pl.svg"
+import flag3 from "../assets/flags/tw.svg"
+import flag4 from "../assets/flags/vt.svg"
+import arrowDown from "../assets/arrowDown.svg"
+import arrowUp from "../assets/arrowUp.svg"
+import burg from "../assets/burger.svg"
+import cross from "../assets/cross.svg"
+import inst from "../assets/socials/inst.svg"
+import linked from "../assets/socials/linked.svg"
+import appStore from "../assets/socials/appStore.svg"
+import googlePlay from "../assets/socials/googlePlay.svg"
 import "./NavBar.scss"
-import { useState } from "react"
-import burger from "../svgElements/burger.svg"
-import cross from "../svgElements/cross.svg"
 
-const NavBar = () => {
-  const [isNav, setIsNav] = useState(false)
+const Navbar = () => {
+  const [language, setLanguage] = useState("EN")
+  const [isOpenLanguage, setIsOpenLanguage] = useState(false)
+  const [isOpened, setIsOpened] = useState(false)
+
   return (
-    <nav className="container">
-      <div>
-        <Link to={""} className="logo">
-          <img src={Logo} alt="NavLogo" />
-        </Link>
-        EN
+    <nav className={isOpened ?"navbar navbar_burger container" :"navbar container"}>
+      <div className="left_wrap">
+        <a href="/">
+          <img className="logo" src={logo} alt="logo" />
+        </a>
+        <div className="languages">
+          <div className={isOpened ? "language_burger" : "language"}>
+            {language}
+            <img
+              className="arrow"
+              src={isOpenLanguage ? arrowUp : arrowDown}
+              alt="arrowDown"
+              onClick={() => setIsOpenLanguage(!isOpenLanguage)}
+            />
+          </div>
+          <div className={isOpenLanguage ? "flags-active" : "flags"}>
+            <ul className="flags_container">
+              <li className="flag">
+                <img
+                  src={flag1}
+                  alt="flag1"
+                  onClick={() => {
+                    setLanguage("EN")
+                    setIsOpenLanguage(false)
+                  }}
+                />
+              </li>
+              <li className="flag">
+                <img
+                  src={flag2}
+                  alt="flag2"
+                  onClick={() => {
+                    setLanguage("ID")
+                    setIsOpenLanguage(false)
+                  }}
+                />
+              </li>
+              <li className="flag">
+                <img
+                  src={flag3}
+                  alt="flag3"
+                  onClick={() => {
+                    setLanguage("TH")
+                    setIsOpenLanguage(false)
+                  }}
+                />
+              </li>
+              <li className="flag">
+                <img
+                  src={flag4}
+                  alt="flag4"
+                  onClick={() => {
+                    setLanguage("VN")
+                    setIsOpenLanguage(false)
+                  }}
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className={isNav ? "menu active" : "menu"}>
-        <ul>
-          <li>
-            <a href="#1"> Home</a>
-          </li>
-          <li>
-            <a href="#1">Features</a>
-          </li>
-          <li>
-            <a href="#1">Company</a>
-          </li>
-        </ul>
-        <button>Get Started</button>
-      </div>
-      <div
-        onClick={() => setIsNav(!isNav)}
-        className="mobile_burg"
-      >
-        {isNav ? (
-          <img src={cross} alt="" />
-        ) : (
-          <img src={burger} alt="" />
-        )}
+      <ul className={isOpened ? "pages_burger" : "pages"}>
+        <li className="page">
+          <a href="/">Home</a>
+        </li>
+        <li className="page">
+          <a href="/">Features</a>
+        </li>
+        <li className="page">
+          <a href="/">Company</a>
+        </li>
+      </ul>
+      <button className={isOpened ? "start_btn_burger" : "start_btn"}>
+        Get Started
+      </button>
+      <img
+        className="burger"
+        src={isOpened ? cross : burg}
+        alt="burger"
+        onClick={() => setIsOpened(!isOpened)}
+      />
+      <div className={isOpened ?"socials_burg" :"socials"}>
+        <div className="left_wrap">
+          <a href="/">
+            <img src={linked} alt="linkedIN" />
+          </a>
+          <a href="/">
+            <img src={inst} alt="Instagram" />
+          </a>
+        </div>
+        <div className="right_wrap">
+          <a href="/">
+            <img src={googlePlay} alt="googlePlay" />
+          </a>
+          <a href="/">
+            <img src={appStore} alt="appStore" />
+          </a>
+        </div>
       </div>
     </nav>
   )
 }
 
-export default NavBar
+export default Navbar

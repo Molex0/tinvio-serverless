@@ -1,0 +1,316 @@
+.putSmile {
+    position: relative;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+    height: 1100px;
+    background:no-repeat url(../../../assets/putSmile/background.svg);
+    @media (max-width:768px) {
+        margin-top: 80px;
+        height: auto;
+        width: auto;
+    }
+
+    .title {
+        margin: 0;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 54px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        /* Text/Main */
+
+        color: #212121;
+
+        @media (max-width:1280px) {
+            font-size: 36px;
+            line-height: 42px;
+        }
+
+        @media (max-width:1024px) {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        @media (max-width:375px) {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 16%;
+
+        @media (max-width:1440px) {
+            padding: 0 9%;
+        }
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            padding: 0 16px;
+            gap: 130px;
+            width: auto;
+        }
+
+        @media (max-width:552px) {
+            flex-direction: column;
+            padding: 0 16px;
+            gap: 80px;
+        }
+
+        @media (max-width:375px) {
+            gap: 130px;
+
+        }
+
+        .icons_left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                width: auto;
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 100px;
+
+                @media (max-width:768px) {
+                    flex-direction: row-reverse;
+                    gap: 100px;
+
+                    &:nth-child(1) {
+                        order: 2;
+                    }
+                }
+
+                @media (max-width:552px) {
+                    gap: 70px;
+                    margin-top: -20px;
+                }
+
+                @media (max-width:375px) {
+                    gap: 30px;
+                    margin-top: -10px;
+                }
+
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media (max-width:768px) {
+                    &:nth-child(2) {
+                        order: 1;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 267px;
+
+                @media (max-width:768px) {
+                    flex-direction: row-reverse;
+                    gap: 348px;
+
+                    &:nth-child(3) {
+                        order: 2;
+                    }
+                }
+
+                @media (max-width:552px) {
+                    gap: 240px;
+                    margin-top: -10px;
+                }
+
+                @media (max-width:375px) {
+                    gap: 170px;
+                    margin-top: -10px;
+                }
+            }
+
+            .icon-rhomb {
+                max-width: 134px;
+                max-height: 134px;
+                background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(246, 245, 245, 0.5) 0%, rgba(250, 250, 250, 0.5) 100%)
+                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+                ;
+                border-radius: 14.8359px;
+                transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+
+                @media (max-width:768px) {
+                    max-width: 110px;
+
+                }
+
+                @media (max-width:552px) {
+                    width: 90px;
+                }
+
+                img {
+                    position: relative;
+                    overflow: hidden;
+                    transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+
+                    @media (max-width:768px) {
+                        width: auto;
+                    }
+
+                }
+            }
+        }
+
+
+        .icon_center {
+            max-width: 465px;
+
+            @media (max-width:768px) {
+                position: absolute;
+                top: 240px;
+            }
+
+            @media (max-width:552px) {
+                width: 343px;
+                top: 205px;
+
+            }
+
+            @media (max-width:375px) {
+                width: 300px;
+                top: 260px;
+
+            }
+        }
+
+        .icons_right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 100px;
+
+                @media (max-width:768px) {
+                    flex-direction: row-reverse;
+                    gap: 100px;
+
+                    &:nth-child(1) {
+                        order: 2;
+                    }
+                }
+
+                @media (max-width:552px) {
+                    gap: 70px;
+                    margin-top: -20px;
+                }
+
+                @media (max-width:375px) {
+                    gap: 40px;
+                    margin-top: -10px;
+                }
+
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media (max-width:768px) {
+                    &:nth-child(2) {
+                        order: 1;
+                    }
+                }
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 267px;
+
+                @media (max-width:768px) {
+                    flex-direction: row-reverse;
+                    gap: 348px;
+
+                    &:nth-child(3) {
+                        order: 2;
+                    }
+                }
+
+                @media (max-width:552px) {
+                    flex-direction: row-reverse;
+                    gap: 240px;
+                    margin-top: -10px;
+
+
+                }
+
+                @media (max-width:375px) {
+                    gap: 170px;
+                    margin-top: -10px;
+                }
+            }
+
+            .icon-rhomb {
+                max-width: 134px;
+                max-height: 134px;
+                background: radial-gradient(95.51% 95.51% at 50% 50%, rgba(246, 245, 245, 0.5) 0%, rgba(250, 250, 250, 0.5) 100%)
+                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+                ;
+                border-radius: 14.8359px;
+                transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+
+                @media (max-width:768px) {
+                    width: 110px;
+
+                }
+
+                @media (max-width:552px) {
+                    width: 90px;
+                }
+
+                img {
+                    position: relative;
+                    overflow: hidden;
+                    transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+
+                    @media (max-width:768px) {
+                        width: auto;
+                    }
+
+                }
+            }
+        }
+    }
+}
