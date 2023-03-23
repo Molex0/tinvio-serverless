@@ -4,7 +4,7 @@
     align-items: center;
     height: 662px;
     z-index: 2;
-    background: no-repeat url(../../../assets/checkBack.svg) #F7F7F7;
+    background: no-repeat url(../../../assets/homePage/checkBack.svg) #F7F7F7;
     background-position: 60% 150%;
     transform: skewY(-8deg);
     border-radius: 50px 0 0 50px;
@@ -18,7 +18,7 @@
     @media (max-width: 768px) {
         height: 956px;
         margin: -470px 0 0 0px;
-        background: no-repeat url(../../../assets/checkBack-768.svg) #F7F7F7;
+        background: no-repeat url(../../../assets/homePage/checkBack-768.svg) #F7F7F7;
         background-position: 40% 80%;
     }
 
@@ -118,7 +118,7 @@
 
             &::before {
                 align-self: center;
-                content: url('../../../assets/play-btn.svg');
+                content: url('../../../assets/homePage/play-btn.svg');
                 margin-right: 8px;
                 margin-top: -2px;
                 width: 10px;
@@ -152,7 +152,7 @@
 }
 
 .howItWorks_second {
-    background: no-repeat url(../../../assets/buddyBack.svg);
+    background: no-repeat url(../../../assets/homePage/buddyBack.svg);
     background-position: 0% 60%;
     padding-top: 140px;
     z-index: 3;
@@ -162,7 +162,7 @@
 
     @media (max-width: 768px) {
         height: auto;
-        background: no-repeat url(../../../assets/buddyBack-768.svg);
+        background: no-repeat url(../../../assets/homePage/buddyBack-768.svg);
         background-position: 0;
     }
 
@@ -296,7 +296,7 @@
                 color: #212121;
 
                 &::before {
-                    content: url(../../../assets/li-dot.svg);
+                    content: url(../../../assets/homePage/li-dot.svg);
                     padding-right: 12px;
                 }
 
@@ -351,7 +351,7 @@
 
         .right_back {
             position: relative;
-            background: no-repeat url(../../../assets/moreBuddyBack.svg);
+            background: no-repeat url(../../../assets/homePage/moreBuddyBack.svg);
             background-position: 0% -10%;
             flex: 0 0 850px;
             padding: 100px 0 0;

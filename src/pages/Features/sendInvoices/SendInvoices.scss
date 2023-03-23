@@ -1,0 +1,88 @@
+.sendInvoices {
+    margin-top: 97px;
+    padding: 0 14% 0 16%;
+    @media (max-width:1440px) {
+        padding: 0 9%;
+    }
+    @media (max-width:768px) {
+        padding: 0 16px;
+    }
+    .text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 66px;
+        @media (max-width:1440px) {
+            gap: 80px;
+        }
+        @media (max-width:1280px) {
+            gap: 48px;
+        }
+        @media (max-width:375px) {
+            flex-direction: column;
+            gap: 12px;
+        }
+        h1 {
+            align-self: self-start;
+            margin: 0;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 54px;
+            color: #212121;
+            max-width: 587px;
+            @media (max-width:1440px) {
+                font-size: 40px;
+                line-height: 49px;
+            }
+            @media (max-width:1024px) {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            @media (max-width:375px) {
+                text-align: center;
+                font-size: 32px;
+                line-height: 39px;
+            }
+        }
+
+        h5 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #5C5C5C;
+            max-width: 659px;
+            @media (max-width:1440px) {
+                max-width: 540px;
+                font-size: 16px;
+                line-height: 23px;
+            }
+            @media (max-width:1280px) {
+                max-width: 405px;
+            }
+            @media (max-width:1024px) {
+                max-width: 391px;
+            }
+        }
+    }
+
+    .send {
+        margin-top: 37px;
+        width: 1344px;
+
+        @media (max-width:375px) {
+            display: none;
+        }
+    }
+
+    .send375 {
+        display: none;
+        @media (max-width:375px) {
+            margin-top: 37px;
+            display: block;
+        }
+    }
+}

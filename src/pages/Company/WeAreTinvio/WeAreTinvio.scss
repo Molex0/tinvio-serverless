@@ -1,0 +1,155 @@
+.weAreTinvio {
+    align-self: center;
+    padding: 152px 0 152px 0;
+    background: no-repeat url(../../../assets/weAreTinvio/back.svg);
+    background-position-y: -180%;
+    .title {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 74px;
+        align-items: center;
+        text-align: center;
+        color: #212121;
+        span{
+            color: #FF474D;
+        }
+        &::before{
+            content: url(../../../assets/weAreTinvio/stars.svg);
+            position: absolute;
+            margin-top: -25px;
+            margin-left: -65px;
+            @media (max-width:375px) {
+                margin-left: -55px;
+            }
+        }
+        @media (max-width:1440px) {
+            font-size: 56px;
+            line-height: 66px;
+        }
+        @media (max-width:1024px) {
+            font-size: 48px;
+            line-height: 59px;
+        }
+        @media (max-width:375px) {
+            font-size: 44px;
+            line-height: 52px;
+        }
+    }
+
+    .subtitle {
+        margin-top: 16px;
+        margin-bottom: 40px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        align-items: center;
+        text-align: center;
+        color: #5C5C5C;
+        @media (max-width:1440px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .bottom-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media (max-width:768px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+        .left-block {
+            background-color: #F7F7F7;
+            padding:60px 236px 60px 16%;
+            @media (max-width:1440px) {
+                padding-left: 9%;
+            }
+            @media (max-width:1024px) {
+                padding:50px 170px 40px 9%;
+            }
+            @media (max-width:768px) {
+                width: 100%;
+                padding:48px 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p {
+                width: 824px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                align-items: center;
+                color: #5C5C5C;
+                @media (max-width:1440px) {
+                    font-size: 16px;
+                    line-height: 23px;
+                    width: 736px;
+                }
+                @media (max-width:1280px) {
+                    width: 492px;
+                }
+                @media (max-width:1024px) {
+                    width: 430px;
+                }
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+                @media (max-width:375px) {
+                    max-width: 295px;
+                }
+            }
+
+            .contact-btn {
+                margin-top: 16px;
+                padding: 17px 47px;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                align-items: center;
+                text-align: center;
+                background: #FFFFFF;
+                border-radius: 16px;
+                border: none;
+                color: #212121;
+                cursor: pointer;
+                &::before{
+                    content: url(../../../assets/weAreTinvio/contact.svg);
+                    margin-right: 8px;
+                }
+                &:hover{
+                    background: #E0E0E1;
+                    transition: 0.3s;
+                }
+                @media (max-width:1440px) {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 14px 42px;
+                }
+                @media (max-width:768px) {
+                    
+                }
+            }
+        }
+
+        img {
+            position: relative;
+            left: -5%;
+            @media (max-width:1280px) {
+                left: -10%;
+            }
+            @media (max-width:768px) {
+                left: 0;
+            }
+        }
+    }
+}

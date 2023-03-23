@@ -1,0 +1,151 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 152px 16% 62px;
+    background:no-repeat url(../../../assets/dashboard/back.svg);
+    background-position: 0 90%;
+    @media (max-width:1024px) {
+        padding: 152px 9% 62px;
+    }
+    @media (max-width:768px) {
+        padding: 152px 16px 62px;
+    }
+    .title{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 69px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        color: #212121;
+        &::before{
+            content: url(../../../assets/dashboard/stars.svg);
+            position: relative;
+            margin: -120px -40px 0 0;
+            @media (max-width:768px) {
+                width: 42px;
+                height: 41px;
+                margin: -120px -20px 0 0;
+            }
+            @media (max-width:490px) { 
+                margin: -150px -20px 0 0;
+            }
+        }   
+        @media (max-width:1440px) {
+            font-size: 48px;
+            line-height: 59px;
+        }
+        @media (max-width:1024px) {
+            font-size: 44px;
+            line-height: 52px;
+        }
+        @media (max-width:768px) {
+            font-size: 36px;
+            line-height: 42px;
+            
+        }
+        @media (max-width:490px) { 
+            br{
+                display: none;
+            }
+        }
+        @media (max-width:375px) { 
+            font-size: 32px;
+            line-height: 39px;
+        }
+    }
+    .subtitle{
+        margin-top: 5px;
+        margin-bottom: 31px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        /* or 125% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        /* Text/Second */
+
+        color: #5C5C5C;
+        max-width: 537px;
+        @media (max-width:1440px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        @media (max-width:1024px) {
+            font-size: 16px;
+            line-height: 23px;
+        }
+        @media (max-width:768px) {
+            max-width: 477px;
+        }
+        @media (max-width:375px) { 
+            font-size: 14px;
+            line-height: 22px;
+            br{
+                display: none;
+            }
+        }
+        
+        
+    }
+    .tryit-btn{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        /* Text / White */
+
+        color: #FFFFFF;
+        padding: 15px 46px;
+        background-color: #FF474D;
+        border-radius: 18px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 66px;
+        &:hover {
+            background-color: #f7696d;
+            transition: 0.3s;
+        }
+        @media (max-width:768px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .img-full{
+        @media (max-width:768px) {
+            display: none;
+        }
+    }
+    .img-768{
+        display: none;
+        @media (max-width:768px) {
+            display: block;
+        }
+        @media (max-width:375px) {
+            display: none;
+        }
+    }
+    .img-375{
+        display: none;
+        @media (max-width:375px) {
+            display: block;
+        }
+    }
+}

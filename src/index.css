@@ -1,5 +1,9 @@
 @import "./normalize.css";
 
+*:focus{
+  border: none;
+  outline: none;
+}
 *,
 *::before,
 *::after {
@@ -10,15 +14,15 @@
   margin: 0;
 }
 html,
+
 body {
-  height: 100%;
-  width: 100%;
-}
-body {
+  scroll-behavior: smooth;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   position: relative;
   height: auto;
+  
+overflow-x: hidden;
 }
 img,
 picture,

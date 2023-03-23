@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import moreBuddy1 from "../../../assets/moreBuddy1.svg"
-import moreBuddy2 from "../../../assets/moreBuddy2.svg"
-import moreBuddy3 from "../../../assets/moreBuddy3.svg"
+import moreBuddy1 from "../../../assets/homePage/moreBuddy1.svg"
+import moreBuddy2 from "../../../assets/homePage/moreBuddy2.svg"
+import moreBuddy3 from "../../../assets/homePage/moreBuddy3.svg"
 import "./HowItWoks.scss"
 
 const HowItWorksComponent = () => {

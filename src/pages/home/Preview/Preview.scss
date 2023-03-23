@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
-  background: no-repeat url(../../../assets/preview-back.svg);
+  background: no-repeat url(../../../assets/homePage/preview-back.svg);
   background-position: 20% 0%;
   z-index: -20;
 
@@ -16,7 +16,7 @@
   h1 {
     margin: 0 0 0 -40px;
     padding: 40px 0 0 40px;
-    background: no-repeat url(../../../assets/stars.svg);
+    background: no-repeat url(../../../assets/homePage/stars.svg);
     background-position: 0 12%;
     @media (max-width:375px) {
       background-position: 0 5%;
@@ -185,7 +185,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    background: no-repeat url(../../../assets/preview-back.svg);
+    background: no-repeat url(../../../assets/homePage/preview-back.svg);
     background-position: 20% 0%;
     align-items: center;
     text-align: center;

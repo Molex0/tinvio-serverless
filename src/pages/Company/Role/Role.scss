@@ -1,0 +1,112 @@
+.role {
+    background: no-repeat url(../../../assets/role/back.svg);
+    background-position-y: -200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 180px 16% 141px 15%;
+    gap: 60px;
+    overflow: hidden;
+    @media (max-width:1440px) {
+        padding: 180px 9% 141px  8%;
+    }
+
+    @media (max-width:1024px) {
+        gap: 65px;
+    }
+
+    @media (max-width:768px) {
+        padding: 180px 16px 141px ;
+        gap: 64px;
+        flex-direction: column-reverse;
+    }
+    .photo-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        max-width: 772px;
+        max-height: 700px;
+        place-content: center;
+        @media (max-width:375px) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-height: fit-content;
+        }
+        .photo3{
+            margin-top: -75px;
+            @media (max-width:1024px) {
+                margin-top: -50px;
+            }
+            @media (max-width:375px) {
+                margin: 0;
+            }
+        }
+    }
+    .right-block {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+        @media (max-width:768px) {
+            align-items: center;
+        }
+        h1 {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 69px;
+            color: #212121;
+            margin: 0;
+            max-width: 357px;
+            @media (max-width:1280px) {
+                font-size: 48px;
+                line-height: 59px;
+            }
+
+            @media (max-width:1024px) {
+                font-size: 44px;
+                line-height: 52px;
+            }
+
+            @media (max-width:768px) {
+                text-align: center;
+                max-width: 537px;
+            }
+
+            @media (max-width:375px) {
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            &::before {
+                content: url(../../../assets/role/stars.svg);
+                position: absolute;
+                margin-top: -50px;
+                margin-left: -40px;
+            }
+        }
+
+        button {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            align-items: center;
+            text-align: center;
+            color: #212121;
+            padding: 14px 45px;
+            border: 1px solid #D2D2D2;
+            border-radius: 16px;
+            cursor: pointer;
+            background: #FFFF;
+            &:hover{
+                background: #E0E0E1;
+                transition: 0.3s;
+            }
+        }
+    }
+}

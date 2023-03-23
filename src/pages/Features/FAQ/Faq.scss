@@ -1,0 +1,110 @@
+.faqs {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 16% 240px;
+    background: no-repeat url(../../../assets/FAQ/back.svg);
+    
+    @media (max-width:1440px) {
+        padding: 0 9% 240px;
+    }
+    @media (max-width:768px) {
+        padding: 0 16px 340px;
+    }
+    h1{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+        align-items: center;
+        color: #212121;
+        @media (max-width:1024px) {
+            font-size: 36px;
+            line-height: 42px;
+        }
+        @media (max-width:375px) {
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+    .faqs_wrapper{
+        display: flex;
+        flex-direction: column;
+        .faq{
+            display: flex;
+            flex-direction: column;
+            &:not(:last-child)::after{
+                content: '';
+                margin-top: 32px;
+                margin-bottom: 32px;
+                height: 1px;
+                width: auto;
+                background: #D2D2D2;
+            }
+            .question_btn{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                h4{
+                    margin: 0;
+                    font-family: 'Gilroy';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                    /* identical to box height */
+
+                    display: flex;
+                    align-items: center;
+
+                    color: #212121;
+                    @media (max-width:1440px) {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                    @media (max-width:375px) {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+                .faq_btn{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    img{
+                        max-width: 20px;
+                        max-height: 20px;
+                        min-width: 20px;
+                        min-height: 20px;
+                    }
+                }
+            }
+            p{
+                margin-top: 24px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                /* or 144% */
+                
+                display: flex;
+                align-items: center;
+                
+                color: #212121;
+                @media (max-width:1440px) {
+                    font-size: 16px;
+                    line-height: 23px;
+                }
+                @media (max-width:375px) {
+                    font-size: 14px;
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
 import React from "react"
 import "./Preview.scss"
-import emoji from "../../../assets/emoji.svg"
-import rectangle from "../../../assets/redRectangle.svg"
-import rectangle_mobile from "../../../assets/preview-768px.svg"
+import { HashLink } from "react-router-hash-link"
+import emoji from "../../../assets/homePage/emoji.svg"
+import rectangle from "../../../assets/homePage/redRectangle.svg"
+import rectangle_mobile from "../../../assets/homePage/preview-768px.svg"
 
 const Preview = () => {
   return (
@@ -20,11 +21,14 @@ const Preview = () => {
           quicker, grow bigger.
         </h4>
         <h4 className="sm-subtext">
-          Manage all your supply chain transactions in one dashboard. 
-          <br />Get paid faster, reconcile quicker, grow bigger.
+          Manage all your supply chain transactions in one dashboard.
+          <br />
+          Get paid faster, reconcile quicker, grow bigger.
         </h4>
         <div className="under_block">
-          <button className="getstarted-btn">Get Started Now</button>
+          <HashLink to="/#contact">
+            <button className="getstarted-btn">Get Started Now</button>
+          </HashLink>
           <div className="text_under">
             <h5>It's free to try!</h5>
             <img src={emoji} alt="emoji" />

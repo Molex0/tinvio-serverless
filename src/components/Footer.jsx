@@ -1,6 +1,7 @@
 import React from "react"
 import "./Footer.scss"
-import logo from "../assets/logo.svg"
+import { NavLink, Link } from "react-router-dom"
+import logo from "../assets/homePage/logo.svg"
 import inst from "../assets/socials/inst.svg"
 import linked from "../assets/socials/linked.svg"
 import appStore from "../assets/socials/appStore.svg"
@@ -15,13 +16,13 @@ const Footer = () => {
           <div className="stick-block"></div>
           <ul className="pages">
             <li className="page">
-              <a href="/">Home</a>
+              <NavLink to="/" className={({isActive}) => isActive ? 'active': ''}>Home</NavLink>
             </li>
             <li className="page">
-              <a href="/">Features</a>
+              <NavLink to="/features" className={({isActive}) => isActive ? 'active': ''}>Features</NavLink>
             </li>
             <li className="page">
-              <a href="/">Company</a>
+              <NavLink to="/company" className={({isActive}) => isActive ? 'active': ''}>Company</NavLink>
             </li>
             <li className="page">
               <a href="/">Login</a>
@@ -53,9 +54,9 @@ const Footer = () => {
           © Tinvio™ 2020. All Rights Reserved
           <div className="stick1"></div>
           <div className="links">
-            <a href="/">Privacy Policy</a>
+            <Link to="/policy">Privacy Policy</Link>
             <div className="stick2"></div>
-            <a href="/">Terms of Service</a>
+            <Link to="/terms">Terms of Service</Link>
           </div>
         </small>
       </div>

@@ -1,6 +1,6 @@
 import React from "react"
 import HowItWorksComponent from "./HowItWorksComponent"
-import checkOut from "../../../assets/checkOut.svg"
+import checkOut from "../../../assets/homePage/checkOut.svg"
 
 import "./HowItWoks.scss"
 

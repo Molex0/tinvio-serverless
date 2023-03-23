@@ -257,6 +257,8 @@
                         padding-left: 16px;
                         width: 329px;
                         height: 40px;
+                        display: flex;
+                        align-items: center;
                         @media (max-width:375px) {
                             width: 295px
                         }

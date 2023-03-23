@@ -70,6 +70,9 @@
   text-decoration: none;
   color: #212121;
 }
+.page .active{
+  color: #ff474d;
+}
 .page a:hover {
   color: #ff474d;
   transition: 0.53s;
@@ -121,7 +124,7 @@
     padding: 24px 16px 0;
   }
   .navbar_burger {
-    background-image: url(../assets/burgerBack.svg);
+    background-image: url(../assets/homePage/burgerBack.svg);
     background-color: #ffff;
     align-items: start;
     height: 100%;

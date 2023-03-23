@@ -1,13 +1,15 @@
 import React, { useState } from "react"
-import logo from "../assets/logo.svg"
+import { Link, NavLink } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
+import logo from "../assets/homePage/logo.svg"
 import flag1 from "../assets/flags/en.svg"
 import flag2 from "../assets/flags/pl.svg"
 import flag3 from "../assets/flags/tw.svg"
 import flag4 from "../assets/flags/vt.svg"
-import arrowDown from "../assets/arrowDown.svg"
-import arrowUp from "../assets/arrowUp.svg"
-import burg from "../assets/burger.svg"
-import cross from "../assets/cross.svg"
+import arrowDown from "../assets/homePage/arrowDown.svg"
+import arrowUp from "../assets/homePage/arrowUp.svg"
+import burg from "../assets/homePage/burger.svg"
+import cross from "../assets/homePage/cross.svg"
 import inst from "../assets/socials/inst.svg"
 import linked from "../assets/socials/linked.svg"
 import appStore from "../assets/socials/appStore.svg"
@@ -18,13 +20,22 @@ const Navbar = () => {
   const [language, setLanguage] = useState("EN")
   const [isOpenLanguage, setIsOpenLanguage] = useState(false)
   const [isOpened, setIsOpened] = useState(false)
-
   return (
-    <nav className={isOpened ?"navbar navbar_burger container" :"navbar container"}>
+    <nav
+      className={
+        isOpened ? "navbar navbar_burger container" : "navbar container"
+      }
+    >
       <div className="left_wrap">
-        <a href="/">
+        <Link
+          to="/"
+          onClick={() => {
+            setIsOpenLanguage(false)
+            setIsOpened(false)
+          }}
+        >
           <img className="logo" src={logo} alt="logo" />
-        </a>
+        </Link>
         <div className="languages">
           <div className={isOpened ? "language_burger" : "language"}>
             {language}
@@ -83,25 +94,57 @@ const Navbar = () => {
       </div>
       <ul className={isOpened ? "pages_burger" : "pages"}>
         <li className="page">
-          <a href="/">Home</a>
+          <NavLink
+            to="/"
+            onClick={() => {
+              setIsOpenLanguage(false)
+              setIsOpened(false)
+            }}
+            className={({ isActive }) => (isActive ? "active" : "")}
+            exact
+          >
+            Home
+          </NavLink>
         </li>
         <li className="page">
-          <a href="/">Features</a>
+          <NavLink
+            to="/features"
+            onClick={() => {
+              setIsOpenLanguage(false)
+              setIsOpened(false)
+            }}
+            className={({ isActive }) => (isActive ? "active" : "")}
+            exact
+          >
+            Features
+          </NavLink>
         </li>
         <li className="page">
-          <a href="/">Company</a>
+          <NavLink
+            to="/company"
+            onClick={() => {
+              setIsOpenLanguage(false)
+              setIsOpened(false)
+            }}
+            className={({ isActive }) => (isActive ? "active" : "")}
+            exact
+          >
+            Company
+          </NavLink>
         </li>
       </ul>
-      <button className={isOpened ? "start_btn_burger" : "start_btn"}>
-        Get Started
-      </button>
+      <HashLink to="/#contact">
+        <button className={isOpened ? "start_btn_burger" : "start_btn"}>
+          Get Started
+        </button>
+      </HashLink>
       <img
         className="burger"
         src={isOpened ? cross : burg}
         alt="burger"
         onClick={() => setIsOpened(!isOpened)}
       />
-      <div className={isOpened ?"socials_burg" :"socials"}>
+      <div className={isOpened ? "socials_burg" : "socials"}>
         <div className="left_wrap">
           <a href="/">
             <img src={linked} alt="linkedIN" />
